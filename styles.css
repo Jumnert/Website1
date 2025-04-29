@@ -138,3 +138,20 @@ div.gallery {
 	color: rgb(0, 0, 101);
 	font-size: 3rem		;
 }
+.alert {
+	height: auto; /* Ensures it adjusts to content */
+	max-height: 300px; /* Optional: Limits the maximum height */
+	overflow-y: auto; /* Adds scroll if content overflows */
+  }
+  
+  @media (max-width: 768px) {
+	.alert {
+	  max-height: 200px; /* Adjust for smaller screens */
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.alert {
+	  max-height: 150px; /* Further adjust for mobile devices */
+	}
+  }
