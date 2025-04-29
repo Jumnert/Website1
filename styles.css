@@ -12,12 +12,12 @@ div.gallery {
 	float: left;
 	width: 180px;
 	border-radius: 10px;
-	box-shadow:rgba(120, 118, 118, 0.2) 0px 8px 24px;
+	box-shadow:rgba(57, 56, 56, 0.2) 0px 8px 24px;
 	
   }
   div.gallery img {
-	width: 100%;
-	height: auto;
+	width: 200px;
+	height: 170px;	
   }
   
   div.desc {
@@ -26,7 +26,15 @@ div.gallery {
   }
   .gallery:hover {
 	transform: scale(1.02);
+	box-shadow: rgba(148, 146, 146, 0.6) 0px 8px 24px
+	
   }
+  .gallery {
+	transition: transform 0.3s ease-in-out;
+	box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 30px
+	
+  }
+  
 .hr1 {
 	margin-top: 19%;
 	background-color: rgb(106, 106, 110);
@@ -40,7 +48,14 @@ div.gallery {
 }
 .card:hover {
 	transform: scale(1.02);
+	box-shadow: rgba(148, 146, 146, 0.6) 0px 8px 24px
   }
+  .card {
+	transition: transform 0.3s ease-in-out;
+	
+	
+  }
+  
 .alert-danger {
 	width: 50%; /* Adjust width as needed */
 	margin: 0 auto; /* Centers the div horizontally */
@@ -63,3 +78,58 @@ div.gallery {
 	font-weight: bold;
 	animation: rgb-color 3s infinite; 
   }
+  .text-bg-primary{
+	padding-left: 20px;
+
+  }
+.h1 {
+	text-align: center;
+
+}
+.footer1{
+	text-align: center;
+
+}
+@keyframes rgb-color {
+	0% { color: rgb(0, 115, 255); }
+  25% { color: rgb(32, 10, 204); }
+  50% { color: rgb(13, 152, 212); }
+  75% { color: blue; }
+  100% { color: rgb(30, 154, 232); }
+  }
+  @keyframes wave {
+	0% { color: rgb(0, 115, 255); }
+	25% { color: rgb(32, 10, 204); }
+	50% { color: rgb(13, 152, 212); }
+	75% { color: blue; }
+	100% { color: rgb(30, 154, 232); }
+  }
+  
+  .wave-effect {
+	animation: wave 3s infinite; /* Applies the wave effect */
+	font-size: 24px; /* Example text styling */
+	font-weight: bold; /* Makes the text more prominent */
+  }
+  
+  .text-rg1 {
+	font-weight: bold;
+	animation: rgb-color 3s infinite; 
+  }
+  .secondh1 {
+    font-size: 40px;
+	text-align: left;
+	padding-left: 20px;
+  }
+  .gif {
+
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    margin: left; /* Center the GIF */
+}
+.gif {
+    max-width: 50%; /* Adjust the size as needed */
+}
+
+.text {
+    margin-left: 20px; /* Space between the GIF and text */
+}
