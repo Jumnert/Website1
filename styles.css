@@ -47,11 +47,11 @@ div.gallery {
 
 }
 .card:hover {
-	transform: scale(1.02);
+	transform: scale(1.01);
 	box-shadow: rgba(148, 146, 146, 0.6) 0px 8px 24px
   }
   .card {
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 	
 	
   }
@@ -122,14 +122,19 @@ div.gallery {
   }
   .gif {
 
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
     display: flex;
     margin: left; /* Center the GIF */
 }
 .gif {
-    max-width: 50%; /* Adjust the size as needed */
+    width: 100%; /* Adjust the size as needed */
 }
 
 .text {
     margin-left: 20px; /* Space between the GIF and text */
+	text-align: center;
+}
+#txt16{
+	color: rgb(0, 0, 101);
+	font-size: 3rem		;
 }
